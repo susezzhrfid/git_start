@@ -1,0 +1,112 @@
+[System Data]
+System.Name=System
+System.Clock Frequency (MHz)=200
+System.Tick Period (ms)=0.5
+System.History Buffer Size=256
+System.Maximum Running Threads=10
+System.Instrumentation Level=Full Instrumentation
+System.Maximum Active Memory Pools=0
+System.Maximum Active Semaphores=64
+System.Maximum Messages=0
+System.Maximum Active Device Flags=0
+System.Maximum I/O Objects=0
+[Thread Types]
+Count=4
+ThreadType0.System Defined=false
+ThreadType0.Name=tMain
+ThreadType0.Priority=5
+ThreadType0.Stack Size=255
+ThreadType0.Source File=tMain.cpp
+ThreadType0.Header File=tMain.h
+ThreadType1.System Defined=false
+ThreadType1.Name=tTCPIP
+ThreadType1.Priority=5
+ThreadType1.Stack Size=10240
+ThreadType1.Source File=tTCPIP.cpp
+ThreadType1.Header File=tTCPIP.h
+ThreadType2.System Defined=false
+ThreadType2.Name=tPHY
+ThreadType2.Priority=5
+ThreadType2.Stack Size=2048
+ThreadType2.Source File=tPHY.cpp
+ThreadType2.Header File=tPHY.h
+ThreadType3.System Defined=false
+ThreadType3.Name=ttemp
+ThreadType3.Priority=10
+ThreadType3.Stack Size=2048
+ThreadType3.Source File=ttemp.cpp
+ThreadType3.Header File=ttemp.h
+[Boot Threads]
+Count=2
+BootThread0.System Defined=false
+BootThread0.Name=b_tMain
+BootThread0.Thread Type=tMain
+BootThread1.System Defined=false
+BootThread1.Name=b_ttemp
+BootThread1.Thread Type=ttemp
+[Priorities]
+Count=1
+Priority0.System Defined=false
+Priority0.Name=Priority5
+Priority0.Period=2
+[Semaphores]
+Count=0
+[Events]
+Count=0
+[Event Bits]
+Count=0
+[Interrupts]
+Count=9
+ISR0.System Defined=false
+ISR0.Name=EVT_IVG10
+ISR0.Enabled at Boot=false
+ISR0.Entry Point=EVT_IVG10_Entry
+ISR0.Source File=EVT_IVG10.asm
+ISR1.System Defined=false
+ISR1.Name=EVT_IVG11
+ISR1.Enabled at Boot=false
+ISR1.Entry Point=EVT_IVG11_Entry
+ISR1.Source File=EVT_IVG11.asm
+ISR2.System Defined=false
+ISR2.Name=EVT_IVG12
+ISR2.Enabled at Boot=false
+ISR2.Entry Point=EVT_IVG12_Entry
+ISR2.Source File=EVT_IVG12.asm
+ISR3.System Defined=false
+ISR3.Name=EVT_IVG13
+ISR3.Enabled at Boot=false
+ISR3.Entry Point=EVT_IVG13_Entry
+ISR3.Source File=EVT_IVG13.asm
+ISR4.System Defined=false
+ISR4.Name=EVT_IVG7
+ISR4.Enabled at Boot=false
+ISR4.Entry Point=EVT_IVG7_Entry
+ISR4.Source File=EVT_IVG7.asm
+ISR5.System Defined=false
+ISR5.Name=EVT_IVG8
+ISR5.Enabled at Boot=false
+ISR5.Entry Point=EVT_IVG8_Entry
+ISR5.Source File=EVT_IVG8.asm
+ISR6.System Defined=false
+ISR6.Name=EVT_IVG9
+ISR6.Enabled at Boot=false
+ISR6.Entry Point=EVT_IVG9_Entry
+ISR6.Source File=EVT_IVG9.asm
+ISR7.System Defined=false
+ISR7.Name=EVT_IVHW
+ISR7.Enabled at Boot=false
+ISR7.Entry Point=EVT_IVHW_Entry
+ISR7.Source File=EVT_IVHW.asm
+ISR8.System Defined=false
+ISR8.Name=EVT_NMI
+ISR8.Enabled at Boot=false
+ISR8.Entry Point=EVT_NMI_Entry
+ISR8.Source File=EVT_NMI.asm
+[Device Drivers]
+Count=0
+[I/O Objects]
+Count=0
+[Device Flags]
+Count=0
+[Memory Pools]
+Count=0
